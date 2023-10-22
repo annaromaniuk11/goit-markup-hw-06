@@ -84,12 +84,12 @@ img {
 }
 .header-name {
   color: var(--NAVY-BLUE, #2e2f42);
-  justify-content: space-between;
 }
 .header-list {
   display: none;
   gap: 40px;
   align-items: center;
+  margin: 76px;
 }
 
 .header-item {
