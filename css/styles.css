@@ -606,7 +606,7 @@ img {
 /* footer */
 
 .footer {
-  padding: 100px 0;
+  padding: 97px 0 96px;
   background-color: var(--NAVY-BLUE, #2e2f42);
 }
 .footer-container {
@@ -1070,6 +1070,11 @@ img {
   .header-address-item:not(:last-child) {
     margin-bottom: 12px;
   }
+  .team-list {
+    width: 552px;
+    gap: 64px 24px;
+    margin: 0 auto;
+  }
 
   .name-footer {
     text-align: left;
@@ -1188,13 +1193,27 @@ img {
   .header-address-item:not(:last-child) {
     margin-bottom: 0px;
   }
+  .team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
 
   .footer {
-    padding: 101.5px 0;
+    padding: 100px 0 100px;
   }
 
   .footer-container {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 100%;
   }
 
   .text-footer {
@@ -1208,5 +1227,8 @@ img {
 
   .footer-form-input {
     margin-left: 80px;
+  }
+  .modal {
+    padding: 72px 24px 24px 24px;
   }
 }
