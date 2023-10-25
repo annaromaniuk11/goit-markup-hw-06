@@ -1003,7 +1003,9 @@ img {
   .plan-title {
     text-align: left;
   }
-
+  .team {
+    padding: 120px 0;
+  }
   .team {
     padding-left: 80px;
     padding-right: 80px;
@@ -1011,6 +1013,9 @@ img {
     padding-bottom: 96px;
   }
 
+  .team-title {
+    padding: 72px 0;
+  }
   .team-list {
     gap: 64px 24px;
   }
@@ -1153,9 +1158,11 @@ img {
     display: block;
     display: flex;
   }
-
   .team {
-    padding: 120px 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .team-list {
     flex-wrap: nowrap;
@@ -1223,7 +1230,12 @@ img {
     padding: 0;
     width: 100%;
   }
-
+  .team {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .team-item {
     width: calc((100% - 3 * 24px) / 4);
   }
