@@ -427,7 +427,8 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
+  padding-top: 72px;
 }
 .team-list {
   display: flex;
@@ -609,10 +610,10 @@ img {
   padding: 97px 0 96px;
   background-color: var(--NAVY-BLUE, #2e2f42);
 }
-.footer-container {
-  width: 552px;
-  margin-bottom: 72px;
+.footer-link {
+  margin-top: 72px;
 }
+
 .name-footer {
   color: var(--IRIS, #4d5ae5);
   font-family: Raleway, sans-serif;
@@ -632,6 +633,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.footer-subscribe {
+  margin-top: 72px;
+}
 
 .footer-text {
   color: var(--CLOUD, #f4f4fd);
@@ -649,9 +653,8 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 72px;
-  margin-bottom: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .media-list {
@@ -692,7 +695,7 @@ img {
   gap: 24px;
   display: block;
   text-align: center;
-
+}
 
 .form-text {
   color: var(--WHITE, #fff);
@@ -702,9 +705,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  margin-top: 72px;
   text-align: center;
-  margin-bottom: 17px;
 }
 
 .footer-form-input {
@@ -987,7 +988,6 @@ img {
 .modal-textarea::placeholder {
   color: var(--LIGHT-SLATE, #8e8f99);
 }
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -1030,7 +1030,18 @@ img {
     padding: 112px 0;
     max-width: 768px;
   }
-
+  .text-footer {
+    margin-right: 0px;
+  }
+  .footer-link {
+    margin-top: 0;
+  }
+  .container.footer-container {
+    max-width: 584px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1172,6 +1183,15 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/office.jpg);
+  }
+  .footer-subscribe {
+    margin-top: 0;
+  }
+  .container.footer-container {
+    display: flex;
+    max-width: 1158px;
+    flex-wrap: nowrap;
+    align-items: baseline;
   }
 
   @media (min-device-pixel-ratio: 2),
